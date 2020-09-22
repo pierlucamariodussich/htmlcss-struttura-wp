@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* sfondo  */
+body {
+  background-image: url(img/natural-pattern.png);
+  text-align:center;
+  font-family: sans-serif;
+}
+
+/* dimensione pagina e margini  */
+.layout{
+  width: 1000px;
+  margin: auto;
+}
+
+/* header */
+
+.container {
+  margin-top: 20px;
+  background-image: url(img/natural-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border: 5px solid white;
+}
+
+.logo img{
+  width: 500px;
+}
+
+.subtitle h2{
+  color: white;
+  font-family:sans-serif;
+  font-weight: 300;
+}
+
+/* nav menu  */
+
+nav{
+  background-color: #666666;
+  width: 100%;
+  text-align:center;
+}
+
+ul.menu li {
+  display: inline-block;
+  height: 45px;
+  line-height:35px;
+  padding: 0 10px;
+}
+
+ul.menu li:hover {
+  background-color: black;
+  cursor: crosshair;
+}
+
+ul.menu li a {
+  color:white;
+  font-family:monospace;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+/* contenuto tre colonne  */
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* column 1,2,3 */
+.col{
+  float: left;
+  margin: auto;
+}
+
+.box{
+  background-color: white;
+  padding:15px;
+  border-radius: 5px;
+  margin-top: 10px
+
+}
+
+/* colum 1,3 */
+.col1,.col3 {
+  width: 20%;
+}
+/* column 2  */
+.col2{
+  width: 54%;
+  margin-left: 3%;
+  margin-right:3%;
+  padding-top: 30px;
+}
+
+/* contenuto column 1 */
+.feed-title-link{
+  text-align: left;
+}
+
+.feed  {
+  width:30px ;
+  }
+
+h3 > .col1{
+  display: inline;
+}
+
+.testlink,a {
+  color:green;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+/* contenuto column 2 */
+
+.testocol2  {
+  text-align: left;
+}
+
+.interlinea{
+ line-height: 28px;
+}
+
+/* contenuto colonna 3 */
+
+.boxing-1,.boxing-2,.boxing-3 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer{
+  background-color:white;
+  border-radius: 5px;
+  padding: 20px 0 ;
+}
+
+ footer p {
+  color: lightgrey;
+}
+.social li{
+  display: inline-block;
+  padding: 20px 120px;
+}
